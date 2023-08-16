@@ -1,0 +1,4 @@
+prefix="elasticscale-test"
+provider_type="GitHub"
+docker_hub_access_token="xxx"
+docker_hub_username="dckr_pat_xxxxx"

@@ -1,0 +1,10 @@
+prefix = "elasticscale-test"
+account_ids = {
+  infra   = "136431940157"
+  prod    = "540259191132"
+  staging = "257804771987"
+}
+users = [{
+  username = "alex"
+  email    = "alex@elasticscale.cloud"
+}]

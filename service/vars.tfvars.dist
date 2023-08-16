@@ -1,0 +1,19 @@
+prefix        = "elasticscale-test"
+cluster_name  = "elasticscale-test-cluster"
+service_name  = "mongo"
+is_production = false
+vpc_id        = "vpc-0a877c3edd9788b66"
+subnets = [
+  "subnet-0cc95612d727d27ee",
+  "subnet-0987e8064201588cd",
+  "subnet-0ef3a827b44d9c236",
+]
+container_definitions = <<TASK_DEFINITION
+[
+  {
+    "name": "mongo",
+    "image": "mongo",
+    "essential": true
+  }
+]
+TASK_DEFINITION
